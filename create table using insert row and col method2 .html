@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Table </title>
+<!-- 	<style type="text/css">
+		table,td,tr{
+			border: 1px solid #33ccff; 
+		}
+	</style> -->
+</head>
+<body>
+	<form> 
+<input type="button" onclick="createTable()" value="Create table"> 
+</form>
+	<script type="text/javascript">
+		var num_rows = prompt("please Enter the num of Rows");
+		var num_cols = prompt("please Enter the num of Cols");
+
+		function createTable(){
+		document.write("<table style='	border: 1px solid #33ccff; '>");
+        for(var i = 1 ; i <=num_rows ; i++){
+        	document.write("<tr style='	border: 1px solid #33ccff; '>");
+        	for(var x = 1 ; x <=num_cols ; x++){
+        		document.write("<td style='	border: 1px solid #33ccff; '>");
+        		document.write("row num :  " + i +"....."+ "col num:  " + x);
+        		document.write("</td>");
+        	}
+        	document.write("</tr>");
+        }
+	document.write("</table>");
+}
+	</script>
+
+</body>
+</html>
